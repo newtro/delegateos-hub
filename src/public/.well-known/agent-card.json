@@ -1,0 +1,40 @@
+{
+  "name": "DelegateOS Network Hub",
+  "description": "Hosted agent capability mesh for registration, delegation, discovery, and settlement. Built on the DelegateOS protocol.",
+  "url": "https://hub.delegateos.dev",
+  "version": "0.1.0",
+  "capabilities": {
+    "agent_registration": true,
+    "capability_discovery": true,
+    "task_delegation": true,
+    "economic_settlement": true,
+    "content_scanning": true,
+    "trust_engine": true,
+    "mcp_server": true
+  },
+  "authentication": {
+    "type": "bearer",
+    "key_types": ["dos_owner_xxxx", "dos_agent_xxxx"],
+    "hashing": "argon2id"
+  },
+  "endpoints": {
+    "register_owner": "/api/v1/owners/register",
+    "register_agent": "/api/v1/register",
+    "discover": "/api/v1/discover",
+    "delegate": "/api/v1/delegate",
+    "inbox": "/api/v1/agents/{id}/inbox",
+    "sync": "/api/v1/network/sync",
+    "health": "/health",
+    "docs": "/docs",
+    "setup": "/agent-setup"
+  },
+  "protocols": ["delegateos-sjt-v1"],
+  "mcp": {
+    "transport": "stdio",
+    "tools": 10
+  },
+  "contact": {
+    "docs": "https://hub.delegateos.dev/docs",
+    "sdk": "https://github.com/newtro/delegateos"
+  }
+}
