@@ -30,7 +30,7 @@
     "argon2": "^0.44.0",
     "bullmq": "^5.71.0",
     "delegate-os": "github:newtro/delegateos",
-    "drizzle-orm": "0.45.1",
+    "drizzle-orm": "0.45.2",
     "hono": "^4.13.5",
     "ioredis": "^5.4.0",
     "pino": "^9.0.0",
