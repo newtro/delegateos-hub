@@ -23,14 +23,14 @@
     "worker": "tsx src/worker.ts"
   },
   "dependencies": {
-    "@hono/node-server": "^1.13.0",
+    "@hono/node-server": "^2.1.1",
     "@hono/zod-openapi": "^0.18.0",
-    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "@scalar/hono-api-reference": "^0.5.0",
     "argon2": "^0.44.0",
     "bullmq": "^5.71.0",
     "delegate-os": "github:newtro/delegateos",
-    "drizzle-orm": "0.45.1",
+    "drizzle-orm": "0.45.2",
     "hono": "^4.13.5",
     "ioredis": "^5.4.0",
     "pino": "^9.0.0",
@@ -44,6 +44,6 @@
     "drizzle-kit": "^0.30.0",
     "tsx": "^4.0.0",
     "typescript": "^5.7.0",
-    "vitest": "^3.0.0"
+    "vitest": "^5.0.0"
   }
 }
